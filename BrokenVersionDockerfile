@@ -26,7 +26,7 @@ RUN mkdir /logs && chown -R sbtuser:sbtuser /logs
 USER sbtuser
 
 RUN mkdir /home/sbtuser/sbt-cross-build-broken
-COPY --chown=sbtuser:sbtuser project/ /home/sbtuser/sbt-cross-build-broken/project/
+COPY --chown=sbtuser:sbtuser build.sbt /home/sbtuser/sbt-cross-build-broken/
 COPY --chown=sbtuser:sbtuser sampleProject/ /home/sbtuser/sbt-cross-build-broken/sampleProject/
 
 WORKDIR /home/sbtuser/sbt-cross-build-broken

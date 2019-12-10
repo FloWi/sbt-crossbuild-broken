@@ -26,6 +26,7 @@ RUN mkdir /logs && chown -R sbtuser:sbtuser /logs
 USER sbtuser
 
 RUN mkdir /home/sbtuser/sbt-crossbuild-broken
+COPY --chown=sbtuser:sbtuser build.sbt /home/sbtuser/sbt-crossbuild-broken/
 COPY --chown=sbtuser:sbtuser project/ /home/sbtuser/sbt-crossbuild-broken/project/
 COPY --chown=sbtuser:sbtuser sampleProject/ /home/sbtuser/sbt-crossbuild-broken/sampleProject/
 

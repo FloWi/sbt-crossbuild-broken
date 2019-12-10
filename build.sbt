@@ -3,7 +3,7 @@ val scala_2_12 = "2.12.10"
 val scala_2_11 = "2.11.12"
 
 val commonDependencies = Seq(
-  "org.typelevel"              %% "cats-core"     % catsVersion,
+  "org.typelevel"              %% "cats-core"     % "2.0.0",
 )
 
 
