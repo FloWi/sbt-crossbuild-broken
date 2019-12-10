@@ -11,7 +11,7 @@ resolvers += Resolver.bintrayRepo("cakesolutions", "maven") //needed for scala-k
 
 lazy val commonSettings = Seq(
   addCompilerPlugin(
-    "org.typelevel" %% "kind-projector" % kindProjectorPluginVersion
+    "org.typelevel" %% "kind-projector" % "0.10.3"
   ),
   organization := "de.flwi",
   name         := "sbt-crossbuild-broken-buildimage",
