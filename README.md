@@ -4,7 +4,7 @@ try these commands:
 
 working (using v 1.3.0)
 ```bash
-docker build --tag sbt-broken-build .
+docker build -f WorkingVersionDockerfile --tag sbt-broken-build .
 ```
 
 
